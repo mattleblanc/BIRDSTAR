@@ -1,5 +1,5 @@
 # BIRDSTAR
-A pico-8 commentary on climate change for the Linux Game Jam '17.
+A [pico-8](http://www.lexaloffle.com/pico-8.php) commentary on climate change, futility and memory manipulation for the [Linux Game Jam '17](https://itch.io/jam/linux-jam-2017).
 
 ---
 
@@ -31,7 +31,7 @@ end
 
 I hope someone else finds this working example helpful!
 
-This snippet was submitted to the Linux Game Jam 2017, mostly because it was totally made within the scope of the jam and I wanted to post it somewhere. Pico 8 is cross-platform and playable in several different ways, so maybe it will inspire some linux users to check out the other projects people have been making with it.
+This snippet was submitted to the [Linux Game Jam 2017](https://itch.io/jam/linux-jam-2017), mostly because it was totally made within the scope of the jam and I wanted to post it somewhere. [Pico 8](http://www.lexaloffle.com/pico-8.php) is cross-platform and playable in several different ways, so maybe it will inspire some linux users to check out the other projects people have been making with it.
 
 :beers: !
 
@@ -40,3 +40,4 @@ This snippet was submitted to the Linux Game Jam 2017, mostly because it was tot
 Awesome | .GIFs | PICO-8 Cart
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/mattleblanc/BIRDSTAR/blob/master/BIRDSTAR_1.gif?raw=true"> | <img src="https://github.com/mattleblanc/BIRDSTAR/blob/master/BIRDSTAR_2.gif?raw=true"> | <img src="https://github.com/mattleblanc/BIRDSTAR/blob/master/birdstar.png?raw=true">
+
