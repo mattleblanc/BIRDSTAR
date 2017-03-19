@@ -39,6 +39,9 @@ end
 
 function gameinit()
 	mode = 1
+cx = 64
+cy = 64
+cr=48
     palt(11, true)
     palt(0, false)
     p1 = {
@@ -158,8 +161,6 @@ if(p1.roost==0) then
       p1.ddy+=0.3
     end
 
-printh(p1.x)
-
     if(p1.y<=3) then
      p1.dy *= (-1)*0.66
      p1.y=4
@@ -183,7 +184,6 @@ end
   p1.ddy=0
 
   if(btnp(2)) then
-  printh("yup")
     p1.roost=0
     p1.ddy-=1.0
     p1.y-=1.0
@@ -256,7 +256,6 @@ end -- end bird loop
   end
 
   if(tick==60) cy*=1.04
-  if(tick==60) printh(cy)
 
   if(cy>=147) mode=2
 
@@ -313,7 +312,9 @@ function gameoverdraw()
  print(p1.score,64,42,7)
  print("PRESS Z TO BIRDSTAR",32,62,7)
 
-spr(16+p1.frame,p1.x,p1.y)
+if(p1.roost==0) then spr(16+p1.frame,p1.x,p1.y-3) end
+if(p1.roost==1) then spr(20,p1.x,p1.y-3) end
+
 
 mirrorcpy(0,128-32*2+1.5*sin(tick/60),0,128-32+1.5*sin(tick/60),128,128-32+1.5*sin(tick/60))
 
@@ -326,24 +327,22 @@ function gamedraw()
  print("score ",80,0,7)
  print(p1.score,110,0,7)
 
+
 -- colour flipping
-if ((tick==60) and (cidx==10)) then 
-  cidx=9
-  inter=10
-  a1=rnd(10)/10.0*(-1.0)*flr(rnd(2))
-  a2=rnd(10)/10.0*(-1.0)*flr(rnd(2))
-  t1=flr(rnd(2))
-  t2=flr(rnd(2))
-elseif ((tick==60)and(cidx==9)) then
+--if ((tick==60) and (cidx==10)) then 
   cidx=10
   inter=9
   a1=rnd(10)/10.0*(-1.0)*flr(rnd(2))
   a2=rnd(10)/10.0*(-1.0)*flr(rnd(2))
   t1=flr(rnd(2))
   t2=flr(rnd(2))
+--elseif ((tick==60)and(cidx==9)) then
+if(cy>=94) then
+  cidx=9
+  inter=10
 end
 
-  circfill(cx,cy,cr,cidx)
+ circfill(cx,cy,cr,cidx)
 
   -- dithering stuff
   for x=cx-cr, cx+cr, 2 do
