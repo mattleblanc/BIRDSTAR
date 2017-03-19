@@ -1,7 +1,7 @@
 # BIRDSTAR
 A [pico-8](http://www.lexaloffle.com/pico-8.php) commentary on climate change, futility and memory manipulation for the [Linux Game Jam '17](https://itch.io/jam/linux-jam-2017).
 
-### You can play it on itch.io [here](), or on github [here](https://mattleblanc.github.io/BIRDSTAR/).
+### You can play it on itch.io [here](https://wizrnd.itch.io/birdstar), or on github [here](https://mattleblanc.github.io/BIRDSTAR/).
 
 
 ---
