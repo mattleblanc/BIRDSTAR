@@ -1,6 +1,9 @@
 # BIRDSTAR
 A [pico-8](http://www.lexaloffle.com/pico-8.php) commentary on climate change, futility and memory manipulation for the [Linux Game Jam '17](https://itch.io/jam/linux-jam-2017).
 
+### You can play it on itch.io [here](), or on github [here](https://mattleblanc.github.io/BIRDSTAR/).
+
+
 ---
 
 This cart was mostly just the result of me learning how to mess around with `memcpy()` -- it turns out that you can do some pretty fun stuff this way. The reflection at the bottom of the screen is created by grabbing part of the screen from memory and overwriting later addresses, in reverse row order. The 'ripple' is done by literally writing to addresses which are further ahead or slightly behind of the normal translation.
