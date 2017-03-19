@@ -328,15 +328,12 @@ function gamedraw()
  print(p1.score,110,0,7)
 
 
--- colour flipping
---if ((tick==60) and (cidx==10)) then 
   cidx=10
   inter=9
   a1=rnd(10)/10.0*(-1.0)*flr(rnd(2))
   a2=rnd(10)/10.0*(-1.0)*flr(rnd(2))
   t1=flr(rnd(2))
   t2=flr(rnd(2))
---elseif ((tick==60)and(cidx==9)) then
 if(cy>=94) then
   cidx=9
   inter=10
